@@ -1,0 +1,33 @@
+/* Basic styling for every page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+
+/* Navigation links */
+
+nav {
+    margin-bottom: 40px;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+
+/* Homepage */
+
+.home {
+    background-image: url("images/jpork.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    color: white;
+}
