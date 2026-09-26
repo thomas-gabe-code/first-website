@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML & CSS Guide</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="test.html">Test Page</a>
+        <a href="guide.html">HTML & CSS Guide</a>
+    </nav>
+
+    <main>
+
+        <h1>HTML & CSS Cheat Sheet</h1>
+
+        <p>
+            Don't try to memorize this stuff.
+        </p>
+
+        <p>
+            Just find what you want to do, copy the example,
+            and change it however you want.
+        </p>
+
+
+        <!-- =========================
+             HTML
+             ========================= -->
+
+        <h2>HTML — Adding Stuff</h2>
+
+        <div class="guide-links">
+
+            <strong>I want to...</strong>
+
+            <a href="#heading">Add a heading</a>
+            <a href="#paragraph">Add normal text</a>
+            <a href="#link">Add a link</a>
+            <a href="#image">Add an image</a>
+            <a href="#list">Make a list</a>
+            <a href="#button">Make a button</a>
+
+        </div>
+
+
+        <h2 id="heading">Add a Heading</h2>
+
+        <p>Use:</p>
+
+        <pre><code>&lt;h1&gt;My Heading&lt;/h1&gt;</code></pre>
+
+        <p>That creates:</p>
+
+        <div class="example">
+            <h1>My Heading</h1>
+        </div>
+
+        <p>
+            You can also use h2, h3, h4, etc. Smaller numbers
+            generally mean more important/larger headings.
+        </p>
+
+
+        <h2 id="paragraph">Add Normal Text</h2>
+
+        <pre><code>&lt;p&gt;This is some text.&lt;/p&gt;</code></pre>
+
+        <div class="example">
+            <p>This is some text.</p>
+        </div>
+
+
+        <h2 id="link">Add a Link</h2>
+
+        <pre><code>&lt;a href="https://google.com"&gt;Go to Google&lt;/a&gt;</code></pre>
+
+        <div class="example">
+            <a href="https://google.com">Go to Google</a>
+        </div>
+
+        <p>
+            Whatever goes inside <code>href=""</code> is where the link goes.
+        </p>
+
+
+        <h2 id="image">Add an Image</h2>
+
+        <p>
+            First put the image inside the images folder.
+        </p>
+
+        <p>
+            Since this page is inside the pages folder, use:
+        </p>
+
+        <pre><code>&lt;img src="../images/jpork.jpeg" width="300"&gt;</code></pre>
+
+        <p>
+            Change the filename to whichever image you want to use.
+        </p>
+
+
+        <h2 id="list">Make a List</h2>
+
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Pizza&lt;/li&gt;
+    &lt;li&gt;Video Games&lt;/li&gt;
+    &lt;li&gt;Music&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <div class="example">
+
+            <ul>
+                <li>Pizza</li>
+                <li>Video Games</li>
+                <li>Music</li>
+            </ul>
+
+        </div>
+
+
+        <h2 id="button">Make a Button</h2>
+
+        <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+
+        <div class="example">
+            <button>Click Me</button>
+        </div>
+
+        <p>
+            This makes a button, although you'll eventually need
+            JavaScript if you want clicking it to actually do something interesting.
+        </p>
+
+
+
+        <!-- =========================
+             CSS
+             ========================= -->
+
+        <h2>CSS — Changing How Stuff Looks</h2>
+
+        <p>
+            HTML adds things to the website.
+            CSS changes how those things look.
+        </p>
+
+        <div class="guide-links">
+
+            <strong>I want to...</strong>
+
+            <a href="#text-color">Change text color</a>
+            <a href="#background-color">Change the background color</a>
+            <a href="#font-size">Make text bigger or smaller</a>
+            <a href="#center">Center text</a>
+            <a href="#border">Add a border</a>
+            <a href="#spacing">Add space around something</a>
+
+        </div>
+
+
+        <h2 id="text-color">Change Text Color</h2>
+
+        <pre><code>color: red;</code></pre>
+
+        <p>
+            For example, you could put this in style.css:
+        </p>
+
+        <pre><code>h1 {
+    color: red;
+}</code></pre>
+
+        <p>
+            Now every <code>&lt;h1&gt;</code> will be red.
+        </p>
+
+
+        <h2 id="background-color">Change the Background Color</h2>
+
+        <pre><code>background-color: lightblue;</code></pre>
+
+        <p>For the entire website:</p>
+
+        <pre><code>body {
+    background-color: lightblue;
+}</code></pre>
+
+
+        <h2 id="font-size">Change Text Size</h2>
+
+        <pre><code>font-size: 30px;</code></pre>
+
+        <p>For example:</p>
+
+        <pre><code>p {
+    font-size: 20px;
+}</code></pre>
+
+
+        <h2 id="center">Center Text</h2>
+
+        <pre><code>text-align: center;</code></pre>
+
+        <p>For example:</p>
+
+        <pre><code>h1 {
+    text-align: center;
+}</code></pre>
+
+
+        <h2 id="border">Add a Border</h2>
+
+        <pre><code>border: 2px solid black;</code></pre>
+
+        <p>For example:</p>
+
+        <pre><code>img {
+    border: 2px solid black;
+}</code></pre>
+
+
+        <h2 id="spacing">Add Space Around Something</h2>
+
+        <p>
+            Padding adds space <strong>inside</strong> something.
+        </p>
+
+        <pre><code>padding: 20px;</code></pre>
+
+        <p>
+            Margin adds space <strong>outside</strong> something.
+        </p>
+
+        <pre><code>margin: 20px;</code></pre>
+
+
+        <h2>Most Important Rule</h2>
+
+        <p>
+            You don't need to know all of this.
+        </p>
+
+        <p>
+            Try something. Save the file. Look at what happened.
+            If you don't like it, change it again.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
