@@ -1,33 +1,109 @@
-/* Basic styling for every page */
+/* -------------------------
+   WHOLE WEBSITE
+   ------------------------- */
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
 }
 
 
-/* Navigation links */
+/* -------------------------
+   NAVIGATION
+   ------------------------- */
 
 nav {
-    margin-bottom: 40px;
+    background-color: #222;
+    padding: 20px;
 }
 
 nav a {
-    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 
-/* Homepage */
+/* -------------------------
+   HOMEPAGE IMAGE
+   ------------------------- */
 
-.home {
+.header-image {
+    height: 350px;
+
     background-image: url("images/jpork.jpeg");
-
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+}
 
-    min-height: 100vh;
 
-    color: white;
+/* -------------------------
+   MAIN CONTENT
+   ------------------------- */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 25px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 45px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* -------------------------
+   CODE EXAMPLES
+   ------------------------- */
+
+pre {
+    background-color: #eeeeee;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+}
+
+
+/* -------------------------
+   GUIDE LINKS
+   ------------------------- */
+
+.guide-links {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.guide-links a {
+    display: block;
+    margin: 8px 0;
+}
+
+
+/* -------------------------
+   GUIDE EXAMPLES
+   ------------------------- */
+
+.example {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0;
 }
