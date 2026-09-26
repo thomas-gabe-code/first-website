@@ -8,252 +8,1082 @@
 
 <body>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="test.html">Test Page</a>
-        <a href="guide.html">HTML & CSS Guide</a>
-    </nav>
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="about.html">How This Works</a>
+    <a href="test.html">Test Page</a>
+    <a href="guide.html">HTML & CSS Guide</a>
+</nav>
 
-    <main>
+<main>
 
-        <h1>HTML & CSS Cheat Sheet</h1>
+<h1>HTML & CSS Cookbook</h1>
 
-        <p>
-            Don't try to memorize this stuff.
-        </p>
+<p>
+    Don't try to memorize this. Find something you want to do,
+    click it, copy the example, and experiment with it.
+</p>
 
-        <p>
-            Just find what you want to do, copy the example,
-            and change it however you want.
-        </p>
-
-
-        <!-- =========================
-             HTML
-             ========================= -->
-
-        <h2>HTML — Adding Stuff</h2>
-
-        <div class="guide-links">
-
-            <strong>I want to...</strong>
-
-            <a href="#heading">Add a heading</a>
-            <a href="#paragraph">Add normal text</a>
-            <a href="#link">Add a link</a>
-            <a href="#image">Add an image</a>
-            <a href="#list">Make a list</a>
-            <a href="#button">Make a button</a>
-
-        </div>
+<p>
+    HTML controls <strong>what is on the page</strong>.
+    CSS controls <strong>what it looks like</strong>.
+</p>
 
 
-        <h2 id="heading">Add a Heading</h2>
+<!-- ===================================================== -->
+<!-- HTML MENU -->
+<!-- ===================================================== -->
 
-        <p>Use:</p>
+<h1>HTML</h1>
 
-        <pre><code>&lt;h1&gt;My Heading&lt;/h1&gt;</code></pre>
+<div class="guide-links">
 
-        <p>That creates:</p>
+    <h3>Text</h3>
+    <a href="#html-heading">1. Add a heading</a>
+    <a href="#html-paragraph">2. Add normal text</a>
+    <a href="#html-bold">3. Make text bold</a>
+    <a href="#html-italic">4. Make text italic</a>
+    <a href="#html-highlight">5. Highlight text</a>
+    <a href="#html-small">6. Make small text</a>
+    <a href="#html-break">7. Start a new line</a>
+    <a href="#html-line">8. Add a horizontal line</a>
+    <a href="#html-quote">9. Add a quote</a>
+    <a href="#html-code">10. Show code</a>
 
-        <div class="example">
-            <h1>My Heading</h1>
-        </div>
+    <h3>Links & Images</h3>
+    <a href="#html-link">11. Add a link</a>
+    <a href="#html-newtab">12. Open a link in a new tab</a>
+    <a href="#html-email">13. Make an email link</a>
+    <a href="#html-phone">14. Make a phone link</a>
+    <a href="#html-image">15. Add an image</a>
+    <a href="#html-image-size">16. Change image size</a>
+    <a href="#html-image-link">17. Make an image clickable</a>
+    <a href="#html-caption">18. Add an image caption</a>
+    <a href="#html-download">19. Make a download link</a>
+    <a href="#html-anchor">20. Jump somewhere on the page</a>
 
-        <p>
-            You can also use h2, h3, h4, etc. Smaller numbers
-            generally mean more important/larger headings.
-        </p>
+    <h3>Lists & Organization</h3>
+    <a href="#html-list">21. Make a bullet list</a>
+    <a href="#html-number-list">22. Make a numbered list</a>
+    <a href="#html-nested-list">23. Make a list inside a list</a>
+    <a href="#html-div">24. Group things together</a>
+    <a href="#html-section">25. Create a section</a>
+    <a href="#html-header">26. Create a header</a>
+    <a href="#html-footer">27. Create a footer</a>
+    <a href="#html-nav">28. Create navigation</a>
+    <a href="#html-details">29. Add expandable information</a>
+    <a href="#html-table">30. Make a table</a>
+
+    <h3>Inputs & Interactive Stuff</h3>
+    <a href="#html-button">31. Add a button</a>
+    <a href="#html-textbox">32. Add a text box</a>
+    <a href="#html-bigtextbox">33. Add a large text box</a>
+    <a href="#html-checkbox">34. Add a checkbox</a>
+    <a href="#html-radio">35. Add radio buttons</a>
+    <a href="#html-dropdown">36. Add a dropdown</a>
+    <a href="#html-slider">37. Add a slider</a>
+    <a href="#html-color">38. Add a color picker</a>
+    <a href="#html-date">39. Add a date picker</a>
+    <a href="#html-form">40. Make a form</a>
+
+    <h3>Other Cool Stuff</h3>
+    <a href="#html-video">41. Add a video</a>
+    <a href="#html-audio">42. Add audio</a>
+    <a href="#html-youtube">43. Embed a YouTube video</a>
+    <a href="#html-progress">44. Add a progress bar</a>
+    <a href="#html-meter">45. Add a meter</a>
+    <a href="#html-emoji">46. Add emoji</a>
+    <a href="#html-tooltip">47. Add hover text</a>
+    <a href="#html-class">48. Give something a CSS class</a>
+    <a href="#html-id">49. Give something an ID</a>
+    <a href="#html-comment">50. Leave yourself a comment</a>
+
+</div>
 
 
-        <h2 id="paragraph">Add Normal Text</h2>
+<!-- ===================================================== -->
+<!-- HTML EXAMPLES -->
+<!-- ===================================================== -->
 
-        <pre><code>&lt;p&gt;This is some text.&lt;/p&gt;</code></pre>
+<h2 id="html-heading">1. Add a Heading</h2>
+<pre><code>&lt;h1&gt;Big Heading&lt;/h1&gt;
+&lt;h2&gt;Smaller Heading&lt;/h2&gt;
+&lt;h3&gt;Even Smaller Heading&lt;/h3&gt;</code></pre>
 
-        <div class="example">
-            <p>This is some text.</p>
-        </div>
-
-
-        <h2 id="link">Add a Link</h2>
-
-        <pre><code>&lt;a href="https://google.com"&gt;Go to Google&lt;/a&gt;</code></pre>
-
-        <div class="example">
-            <a href="https://google.com">Go to Google</a>
-        </div>
-
-        <p>
-            Whatever goes inside <code>href=""</code> is where the link goes.
-        </p>
+<div class="example">
+    <h1>Big Heading</h1>
+    <h2>Smaller Heading</h2>
+    <h3>Even Smaller Heading</h3>
+</div>
 
 
-        <h2 id="image">Add an Image</h2>
+<h2 id="html-paragraph">2. Add Normal Text</h2>
+<pre><code>&lt;p&gt;Put whatever you want to say here.&lt;/p&gt;</code></pre>
 
-        <p>
-            First put the image inside the images folder.
-        </p>
-
-        <p>
-            Since this page is inside the pages folder, use:
-        </p>
-
-        <pre><code>&lt;img src="../images/jpork.jpeg" width="300"&gt;</code></pre>
-
-        <p>
-            Change the filename to whichever image you want to use.
-        </p>
+<div class="example">
+    <p>Put whatever you want to say here.</p>
+</div>
 
 
-        <h2 id="list">Make a List</h2>
+<h2 id="html-bold">3. Make Text Bold</h2>
+<pre><code>&lt;strong&gt;This is important.&lt;/strong&gt;</code></pre>
 
-        <pre><code>&lt;ul&gt;
+<div class="example">
+    <strong>This is important.</strong>
+</div>
+
+
+<h2 id="html-italic">4. Make Text Italic</h2>
+<pre><code>&lt;em&gt;This is italic.&lt;/em&gt;</code></pre>
+
+<div class="example">
+    <em>This is italic.</em>
+</div>
+
+
+<h2 id="html-highlight">5. Highlight Text</h2>
+<pre><code>&lt;mark&gt;Look at this!&lt;/mark&gt;</code></pre>
+
+<div class="example">
+    <mark>Look at this!</mark>
+</div>
+
+
+<h2 id="html-small">6. Make Small Text</h2>
+<pre><code>&lt;small&gt;This is the fine print.&lt;/small&gt;</code></pre>
+
+<div class="example">
+    <small>This is the fine print.</small>
+</div>
+
+
+<h2 id="html-break">7. Start a New Line</h2>
+<pre><code>First line&lt;br&gt;
+Second line</code></pre>
+
+<div class="example">
+    First line<br>
+    Second line
+</div>
+
+
+<h2 id="html-line">8. Add a Horizontal Line</h2>
+<pre><code>&lt;hr&gt;</code></pre>
+
+<div class="example">
+    Stuff above
+    <hr>
+    Stuff below
+</div>
+
+
+<h2 id="html-quote">9. Add a Quote</h2>
+<pre><code>&lt;blockquote&gt;
+    "The only way to learn this is to mess around."
+&lt;/blockquote&gt;</code></pre>
+
+<div class="example">
+    <blockquote>
+        "The only way to learn this is to mess around."
+    </blockquote>
+</div>
+
+
+<h2 id="html-code">10. Show Code</h2>
+<pre><code>&lt;code&gt;git push&lt;/code&gt;</code></pre>
+
+<div class="example">
+    <code>git push</code>
+</div>
+
+
+<h2 id="html-link">11. Add a Link</h2>
+<pre><code>&lt;a href="https://google.com"&gt;Go to Google&lt;/a&gt;</code></pre>
+
+<div class="example">
+    <a href="https://google.com">Go to Google</a>
+</div>
+
+
+<h2 id="html-newtab">12. Open a Link in a New Tab</h2>
+<pre><code>&lt;a href="https://google.com" target="_blank"&gt;
+    Open Google
+&lt;/a&gt;</code></pre>
+
+
+<h2 id="html-email">13. Make an Email Link</h2>
+<pre><code>&lt;a href="mailto:example@gmail.com"&gt;Email Me&lt;/a&gt;</code></pre>
+
+
+<h2 id="html-phone">14. Make a Phone Link</h2>
+<pre><code>&lt;a href="tel:1234567890"&gt;Call Me&lt;/a&gt;</code></pre>
+
+
+<h2 id="html-image">15. Add an Image</h2>
+<pre><code>&lt;img src="../images/jpork.jpeg" alt="My picture"&gt;</code></pre>
+
+<p>
+    Because this page is inside <code>pages/</code>, the <code>..</code>
+    means "go back one folder."
+</p>
+
+
+<h2 id="html-image-size">16. Change Image Size</h2>
+<pre><code>&lt;img src="../images/jpork.jpeg" width="300"&gt;</code></pre>
+
+
+<h2 id="html-image-link">17. Make an Image Clickable</h2>
+<pre><code>&lt;a href="https://google.com"&gt;
+    &lt;img src="../images/jpork.jpeg" width="200"&gt;
+&lt;/a&gt;</code></pre>
+
+
+<h2 id="html-caption">18. Add an Image Caption</h2>
+<pre><code>&lt;figure&gt;
+    &lt;img src="../images/jpork.jpeg" width="300"&gt;
+    &lt;figcaption&gt;This is my picture.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+
+<h2 id="html-download">19. Make a Download Link</h2>
+<pre><code>&lt;a href="../images/jpork.jpeg" download&gt;
+    Download Picture
+&lt;/a&gt;</code></pre>
+
+
+<h2 id="html-anchor">20. Jump Somewhere on the Page</h2>
+<pre><code>&lt;a href="#games"&gt;Jump to Games&lt;/a&gt;
+
+&lt;h2 id="games"&gt;My Favorite Games&lt;/h2&gt;</code></pre>
+
+
+<h2 id="html-list">21. Make a Bullet List</h2>
+<pre><code>&lt;ul&gt;
     &lt;li&gt;Pizza&lt;/li&gt;
-    &lt;li&gt;Video Games&lt;/li&gt;
+    &lt;li&gt;Games&lt;/li&gt;
     &lt;li&gt;Music&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-        <div class="example">
-
-            <ul>
-                <li>Pizza</li>
-                <li>Video Games</li>
-                <li>Music</li>
-            </ul>
-
-        </div>
+<div class="example">
+    <ul>
+        <li>Pizza</li>
+        <li>Games</li>
+        <li>Music</li>
+    </ul>
+</div>
 
 
-        <h2 id="button">Make a Button</h2>
-
-        <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
-
-        <div class="example">
-            <button>Click Me</button>
-        </div>
-
-        <p>
-            This makes a button, although you'll eventually need
-            JavaScript if you want clicking it to actually do something interesting.
-        </p>
+<h2 id="html-number-list">22. Make a Numbered List</h2>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;First&lt;/li&gt;
+    &lt;li&gt;Second&lt;/li&gt;
+    &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
 
 
-
-        <!-- =========================
-             CSS
-             ========================= -->
-
-        <h2>CSS — Changing How Stuff Looks</h2>
-
-        <p>
-            HTML adds things to the website.
-            CSS changes how those things look.
-        </p>
-
-        <div class="guide-links">
-
-            <strong>I want to...</strong>
-
-            <a href="#text-color">Change text color</a>
-            <a href="#background-color">Change the background color</a>
-            <a href="#font-size">Make text bigger or smaller</a>
-            <a href="#center">Center text</a>
-            <a href="#border">Add a border</a>
-            <a href="#spacing">Add space around something</a>
-
-        </div>
+<h2 id="html-nested-list">23. Put a List Inside a List</h2>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Games
+        &lt;ul&gt;
+            &lt;li&gt;Minecraft&lt;/li&gt;
+            &lt;li&gt;Fortnite&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 
 
-        <h2 id="text-color">Change Text Color</h2>
+<h2 id="html-div">24. Group Things Together</h2>
+<pre><code>&lt;div&gt;
+    &lt;h2&gt;My Section&lt;/h2&gt;
+    &lt;p&gt;These things are grouped together.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 
-        <pre><code>color: red;</code></pre>
+<p>
+    A <code>div</code> is basically a box you can put other things inside.
+    It's especially useful when you start using CSS.
+</p>
 
-        <p>
-            For example, you could put this in style.css:
-        </p>
 
-        <pre><code>h1 {
+<h2 id="html-section">25. Create a Section</h2>
+<pre><code>&lt;section&gt;
+    &lt;h2&gt;My Games&lt;/h2&gt;
+    &lt;p&gt;Stuff about my games goes here.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+
+<h2 id="html-header">26. Create a Header</h2>
+<pre><code>&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+
+
+<h2 id="html-footer">27. Create a Footer</h2>
+<pre><code>&lt;footer&gt;
+    &lt;p&gt;Made by Thomas&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+
+<h2 id="html-nav">28. Create Navigation</h2>
+<pre><code>&lt;nav&gt;
+    &lt;a href="../index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html"&gt;About&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+
+<h2 id="html-details">29. Add Expandable Information</h2>
+<pre><code>&lt;details&gt;
+    &lt;summary&gt;Click to reveal something&lt;/summary&gt;
+    &lt;p&gt;Secret information!&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+
+<div class="example">
+    <details>
+        <summary>Click to reveal something</summary>
+        <p>Secret information!</p>
+    </details>
+</div>
+
+
+<h2 id="html-table">30. Make a Table</h2>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Game&lt;/th&gt;
+        &lt;th&gt;Rating&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Minecraft&lt;/td&gt;
+        &lt;td&gt;10/10&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+
+<h2 id="html-button">31. Add a Button</h2>
+<pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+
+<div class="example">
+    <button>Click Me</button>
+</div>
+
+
+<h2 id="html-textbox">32. Add a Text Box</h2>
+<pre><code>&lt;input type="text" placeholder="Type something..."&gt;</code></pre>
+
+<div class="example">
+    <input type="text" placeholder="Type something...">
+</div>
+
+
+<h2 id="html-bigtextbox">33. Add a Large Text Box</h2>
+<pre><code>&lt;textarea placeholder="Write something..."&gt;&lt;/textarea&gt;</code></pre>
+
+
+<h2 id="html-checkbox">34. Add a Checkbox</h2>
+<pre><code>&lt;label&gt;
+    &lt;input type="checkbox"&gt;
+    I like pizza
+&lt;/label&gt;</code></pre>
+
+<div class="example">
+    <label>
+        <input type="checkbox">
+        I like pizza
+    </label>
+</div>
+
+
+<h2 id="html-radio">35. Add Radio Buttons</h2>
+<pre><code>&lt;input type="radio" name="food"&gt; Pizza
+&lt;input type="radio" name="food"&gt; Tacos</code></pre>
+
+
+<h2 id="html-dropdown">36. Add a Dropdown</h2>
+<pre><code>&lt;select&gt;
+    &lt;option&gt;Pizza&lt;/option&gt;
+    &lt;option&gt;Tacos&lt;/option&gt;
+    &lt;option&gt;Burgers&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+<div class="example">
+    <select>
+        <option>Pizza</option>
+        <option>Tacos</option>
+        <option>Burgers</option>
+    </select>
+</div>
+
+
+<h2 id="html-slider">37. Add a Slider</h2>
+<pre><code>&lt;input type="range" min="0" max="100"&gt;</code></pre>
+
+<div class="example">
+    <input type="range" min="0" max="100">
+</div>
+
+
+<h2 id="html-color">38. Add a Color Picker</h2>
+<pre><code>&lt;input type="color"&gt;</code></pre>
+
+<div class="example">
+    <input type="color">
+</div>
+
+
+<h2 id="html-date">39. Add a Date Picker</h2>
+<pre><code>&lt;input type="date"&gt;</code></pre>
+
+<div class="example">
+    <input type="date">
+</div>
+
+
+<h2 id="html-form">40. Make a Form</h2>
+<pre><code>&lt;form&gt;
+
+    &lt;label&gt;Name:&lt;/label&gt;
+    &lt;input type="text"&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;</code></pre>
+
+<p>
+    Making a form actually send information somewhere requires
+    some additional work later.
+</p>
+
+
+<h2 id="html-video">41. Add a Video</h2>
+<pre><code>&lt;video controls width="500"&gt;
+    &lt;source src="myvideo.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+
+
+<h2 id="html-audio">42. Add Audio</h2>
+<pre><code>&lt;audio controls&gt;
+    &lt;source src="mysong.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+
+
+<h2 id="html-youtube">43. Embed a YouTube Video</h2>
+<pre><code>&lt;iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+
+<p>
+    YouTube also has a Share → Embed option that generates this code for you.
+</p>
+
+
+<h2 id="html-progress">44. Add a Progress Bar</h2>
+<pre><code>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</code></pre>
+
+<div class="example">
+    <progress value="70" max="100"></progress>
+</div>
+
+
+<h2 id="html-meter">45. Add a Meter</h2>
+<pre><code>&lt;meter value="8" min="0" max="10"&gt;&lt;/meter&gt;</code></pre>
+
+<div class="example">
+    <meter value="8" min="0" max="10"></meter>
+</div>
+
+
+<h2 id="html-emoji">46. Add Emoji</h2>
+<pre><code>&lt;p&gt;Happy Birthday 🎉🎂&lt;/p&gt;</code></pre>
+
+<div class="example">
+    <p>Happy Birthday 🎉🎂</p>
+</div>
+
+
+<h2 id="html-tooltip">47. Add Hover Text</h2>
+<pre><code>&lt;p title="You found the secret message!"&gt;
+    Hover over me.
+&lt;/p&gt;</code></pre>
+
+<div class="example">
+    <p title="You found the secret message!">Hover over me.</p>
+</div>
+
+
+<h2 id="html-class">48. Give Something a CSS Class</h2>
+<pre><code>&lt;p class="important"&gt;
+    This has a class called important.
+&lt;/p&gt;</code></pre>
+
+<p>Then CSS can target it:</p>
+
+<pre><code>.important {
     color: red;
 }</code></pre>
 
-        <p>
-            Now every <code>&lt;h1&gt;</code> will be red.
-        </p>
+
+<h2 id="html-id">49. Give Something an ID</h2>
+<pre><code>&lt;h2 id="games"&gt;Games&lt;/h2&gt;</code></pre>
+
+<p>
+    IDs can identify one specific thing on your page.
+</p>
 
 
-        <h2 id="background-color">Change the Background Color</h2>
+<h2 id="html-comment">50. Leave Yourself a Comment</h2>
+<pre><code>&lt;!-- This won't appear on the website --&gt;
 
-        <pre><code>background-color: lightblue;</code></pre>
+&lt;h1&gt;This WILL appear.&lt;/h1&gt;</code></pre>
 
-        <p>For the entire website:</p>
 
-        <pre><code>body {
-    background-color: lightblue;
+<!-- ===================================================== -->
+<!-- CSS -->
+<!-- ===================================================== -->
+
+<h1>CSS</h1>
+
+<p>
+    The examples below normally go inside <code>style.css</code>.
+</p>
+
+<p>
+    For example:
+</p>
+
+<pre><code>p {
+    color: blue;
+}</code></pre>
+
+<p>
+    means "make every paragraph blue."
+</p>
+
+
+<div class="guide-links">
+
+    <h3>Text</h3>
+    <a href="#css-color">51. Change text color</a>
+    <a href="#css-size">52. Change text size</a>
+    <a href="#css-font">53. Change the font</a>
+    <a href="#css-bold">54. Make text bold</a>
+    <a href="#css-center">55. Center text</a>
+    <a href="#css-uppercase">56. MAKE TEXT UPPERCASE</a>
+    <a href="#css-spacing">57. Space out letters</a>
+    <a href="#css-lineheight">58. Change line spacing</a>
+    <a href="#css-shadow">59. Add a text shadow</a>
+    <a href="#css-decoration">60. Remove link underlines</a>
+
+    <h3>Colors & Backgrounds</h3>
+    <a href="#css-background">61. Change background color</a>
+    <a href="#css-bgimage">62. Add a background image</a>
+    <a href="#css-cover">63. Make a background fill an area</a>
+    <a href="#css-gradient">64. Make a gradient</a>
+    <a href="#css-opacity">65. Make something transparent</a>
+
+    <h3>Size & Spacing</h3>
+    <a href="#css-width">66. Change width</a>
+    <a href="#css-height">67. Change height</a>
+    <a href="#css-maxwidth">68. Set a maximum width</a>
+    <a href="#css-padding">69. Add inside spacing</a>
+    <a href="#css-margin">70. Add outside spacing</a>
+    <a href="#css-auto">71. Center a box</a>
+    <a href="#css-fullscreen">72. Make something screen height</a>
+
+    <h3>Borders & Shapes</h3>
+    <a href="#css-border">73. Add a border</a>
+    <a href="#css-rounded">74. Round corners</a>
+    <a href="#css-circle">75. Make a circle</a>
+    <a href="#css-boxshadow">76. Add a shadow</a>
+    <a href="#css-bordercolor">77. Change border color</a>
+
+    <h3>Images</h3>
+    <a href="#css-imagewidth">78. Resize images</a>
+    <a href="#css-image-round">79. Round an image</a>
+    <a href="#css-image-circle">80. Make a profile picture</a>
+    <a href="#css-image-fit">81. Crop an image nicely</a>
+    <a href="#css-image-center">82. Center an image</a>
+
+    <h3>Layout</h3>
+    <a href="#css-flex">83. Put things side by side</a>
+    <a href="#css-flexcenter">84. Center things</a>
+    <a href="#css-gap">85. Add space between things</a>
+    <a href="#css-column">86. Stack things vertically</a>
+    <a href="#css-grid">87. Make a grid</a>
+    <a href="#css-card">88. Make a card</a>
+
+    <h3>Effects</h3>
+    <a href="#css-hover">89. Change something when hovered</a>
+    <a href="#css-pointer">90. Make the mouse a pointer</a>
+    <a href="#css-transition">91. Make changes smooth</a>
+    <a href="#css-grow">92. Make something grow on hover</a>
+    <a href="#css-rotate">93. Rotate something</a>
+    <a href="#css-hide">94. Hide something</a>
+
+    <h3>Useful Tricks</h3>
+    <a href="#css-class">95. Style one class</a>
+    <a href="#css-id">96. Style one ID</a>
+    <a href="#css-child">97. Style links inside navigation</a>
+    <a href="#css-button">98. Make a button look better</a>
+    <a href="#css-sticky">99. Make navigation stick to the top</a>
+    <a href="#css-mobile">100. Change styles on phones</a>
+
+</div>
+
+
+<!-- ===================================================== -->
+<!-- CSS EXAMPLES -->
+<!-- ===================================================== -->
+
+<h2 id="css-color">51. Change Text Color</h2>
+<pre><code>p {
+    color: blue;
 }</code></pre>
 
 
-        <h2 id="font-size">Change Text Size</h2>
-
-        <pre><code>font-size: 30px;</code></pre>
-
-        <p>For example:</p>
-
-        <pre><code>p {
-    font-size: 20px;
+<h2 id="css-size">52. Change Text Size</h2>
+<pre><code>h1 {
+    font-size: 50px;
 }</code></pre>
 
 
-        <h2 id="center">Center Text</h2>
+<h2 id="css-font">53. Change the Font</h2>
+<pre><code>body {
+    font-family: Georgia, serif;
+}</code></pre>
 
-        <pre><code>text-align: center;</code></pre>
 
-        <p>For example:</p>
+<h2 id="css-bold">54. Make Text Bold</h2>
+<pre><code>p {
+    font-weight: bold;
+}</code></pre>
 
-        <pre><code>h1 {
+
+<h2 id="css-center">55. Center Text</h2>
+<pre><code>h1 {
     text-align: center;
 }</code></pre>
 
 
-        <h2 id="border">Add a Border</h2>
+<h2 id="css-uppercase">56. Make Text Uppercase</h2>
+<pre><code>h2 {
+    text-transform: uppercase;
+}</code></pre>
 
-        <pre><code>border: 2px solid black;</code></pre>
 
-        <p>For example:</p>
+<h2 id="css-spacing">57. Space Out Letters</h2>
+<pre><code>h1 {
+    letter-spacing: 5px;
+}</code></pre>
 
-        <pre><code>img {
+
+<h2 id="css-lineheight">58. Change Line Spacing</h2>
+<pre><code>p {
+    line-height: 1.8;
+}</code></pre>
+
+
+<h2 id="css-shadow">59. Add a Text Shadow</h2>
+<pre><code>h1 {
+    text-shadow: 2px 2px 5px gray;
+}</code></pre>
+
+
+<h2 id="css-decoration">60. Remove Link Underlines</h2>
+<pre><code>a {
+    text-decoration: none;
+}</code></pre>
+
+
+<h2 id="css-background">61. Change Background Color</h2>
+<pre><code>body {
+    background-color: lightblue;
+}</code></pre>
+
+
+<h2 id="css-bgimage">62. Add a Background Image</h2>
+<pre><code>.header {
+    background-image: url("images/jpork.jpeg");
+}</code></pre>
+
+
+<h2 id="css-cover">63. Make a Background Fill an Area</h2>
+<pre><code>.header {
+    background-image: url("images/jpork.jpeg");
+    background-size: cover;
+    background-position: center;
+}</code></pre>
+
+
+<h2 id="css-gradient">64. Make a Gradient</h2>
+<pre><code>.cool-background {
+    background: linear-gradient(to right, blue, purple);
+}</code></pre>
+
+
+<h2 id="css-opacity">65. Make Something Transparent</h2>
+<pre><code>.picture {
+    opacity: 0.5;
+}</code></pre>
+
+<p>
+    <code>1</code> is completely visible.
+    <code>0</code> is completely invisible.
+</p>
+
+
+<h2 id="css-width">66. Change Width</h2>
+<pre><code>.box {
+    width: 300px;
+}</code></pre>
+
+
+<h2 id="css-height">67. Change Height</h2>
+<pre><code>.box {
+    height: 200px;
+}</code></pre>
+
+
+<h2 id="css-maxwidth">68. Set a Maximum Width</h2>
+<pre><code>main {
+    max-width: 900px;
+}</code></pre>
+
+<p>
+    This is what your current website uses so the text doesn't stretch
+    across a gigantic monitor.
+</p>
+
+
+<h2 id="css-padding">69. Add Inside Spacing</h2>
+<pre><code>.box {
+    padding: 30px;
+}</code></pre>
+
+<p>Padding adds space <strong>inside</strong> the box.</p>
+
+
+<h2 id="css-margin">70. Add Outside Spacing</h2>
+<pre><code>.box {
+    margin: 30px;
+}</code></pre>
+
+<p>Margin adds space <strong>outside</strong> the box.</p>
+
+
+<h2 id="css-auto">71. Center a Box</h2>
+<pre><code>.box {
+    width: 500px;
+    margin: auto;
+}</code></pre>
+
+
+<h2 id="css-fullscreen">72. Make Something Screen Height</h2>
+<pre><code>.hero {
+    min-height: 100vh;
+}</code></pre>
+
+<p>
+    <code>100vh</code> means 100% of the height of the browser window.
+</p>
+
+
+<h2 id="css-border">73. Add a Border</h2>
+<pre><code>.box {
     border: 2px solid black;
 }</code></pre>
 
 
-        <h2 id="spacing">Add Space Around Something</h2>
-
-        <p>
-            Padding adds space <strong>inside</strong> something.
-        </p>
-
-        <pre><code>padding: 20px;</code></pre>
-
-        <p>
-            Margin adds space <strong>outside</strong> something.
-        </p>
-
-        <pre><code>margin: 20px;</code></pre>
+<h2 id="css-rounded">74. Round Corners</h2>
+<pre><code>.box {
+    border-radius: 15px;
+}</code></pre>
 
 
-        <h2>Most Important Rule</h2>
+<h2 id="css-circle">75. Make a Circle</h2>
+<pre><code>.circle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}</code></pre>
 
-        <p>
-            You don't need to know all of this.
-        </p>
 
-        <p>
-            Try something. Save the file. Look at what happened.
-            If you don't like it, change it again.
-        </p>
+<h2 id="css-boxshadow">76. Add a Shadow</h2>
+<pre><code>.box {
+    box-shadow: 0 4px 10px gray;
+}</code></pre>
 
-    </main>
+
+<h2 id="css-bordercolor">77. Change Border Color</h2>
+<pre><code>.box {
+    border: 3px solid red;
+}</code></pre>
+
+
+<h2 id="css-imagewidth">78. Resize Images</h2>
+<pre><code>img {
+    width: 300px;
+}</code></pre>
+
+
+<h2 id="css-image-round">79. Round an Image</h2>
+<pre><code>img {
+    border-radius: 20px;
+}</code></pre>
+
+
+<h2 id="css-image-circle">80. Make a Profile Picture</h2>
+<pre><code>.profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}</code></pre>
+
+
+<h2 id="css-image-fit">81. Crop an Image Nicely</h2>
+<pre><code>img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}</code></pre>
+
+
+<h2 id="css-image-center">82. Center an Image</h2>
+<pre><code>img {
+    display: block;
+    margin: auto;
+}</code></pre>
+
+
+<h2 id="css-flex">83. Put Things Side by Side</h2>
+<pre><code>.container {
+    display: flex;
+}</code></pre>
+
+<p>HTML:</p>
+
+<pre><code>&lt;div class="container"&gt;
+    &lt;p&gt;Left&lt;/p&gt;
+    &lt;p&gt;Middle&lt;/p&gt;
+    &lt;p&gt;Right&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+<h2 id="css-flexcenter">84. Center Things</h2>
+<pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+
+
+<h2 id="css-gap">85. Add Space Between Things</h2>
+<pre><code>.container {
+    display: flex;
+    gap: 20px;
+}</code></pre>
+
+
+<h2 id="css-column">86. Stack Things Vertically</h2>
+<pre><code>.container {
+    display: flex;
+    flex-direction: column;
+}</code></pre>
+
+
+<h2 id="css-grid">87. Make a Grid</h2>
+<pre><code>.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}</code></pre>
+
+<p>HTML:</p>
+
+<pre><code>&lt;div class="grid"&gt;
+    &lt;div&gt;One&lt;/div&gt;
+    &lt;div&gt;Two&lt;/div&gt;
+    &lt;div&gt;Three&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<h2 id="css-card">88. Make a Card</h2>
+<pre><code>.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px lightgray;
+}</code></pre>
+
+<p>Then:</p>
+
+<pre><code>&lt;div class="card"&gt;
+    &lt;h2&gt;Minecraft&lt;/h2&gt;
+    &lt;p&gt;One of my favorite games.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+<h2 id="css-hover">89. Change Something When Hovered</h2>
+<pre><code>a:hover {
+    color: red;
+}</code></pre>
+
+
+<h2 id="css-pointer">90. Make the Mouse a Pointer</h2>
+<pre><code>.thing {
+    cursor: pointer;
+}</code></pre>
+
+
+<h2 id="css-transition">91. Make Changes Smooth</h2>
+<pre><code>.box {
+    transition: 0.3s;
+}
+
+.box:hover {
+    background-color: blue;
+}</code></pre>
+
+
+<h2 id="css-grow">92. Make Something Grow on Hover</h2>
+<pre><code>.picture {
+    transition: 0.3s;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+}</code></pre>
+
+
+<h2 id="css-rotate">93. Rotate Something</h2>
+<pre><code>.picture {
+    transform: rotate(10deg);
+}</code></pre>
+
+
+<h2 id="css-hide">94. Hide Something</h2>
+<pre><code>.secret {
+    display: none;
+}</code></pre>
+
+
+<h2 id="css-class">95. Style One Class</h2>
+
+<p>HTML:</p>
+
+<pre><code>&lt;p class="important"&gt;Important message&lt;/p&gt;</code></pre>
+
+<p>CSS:</p>
+
+<pre><code>.important {
+    color: red;
+    font-weight: bold;
+}</code></pre>
+
+<p>
+    The <code>.</code> means you're targeting a class.
+</p>
+
+
+<h2 id="css-id">96. Style One ID</h2>
+
+<p>HTML:</p>
+
+<pre><code>&lt;h1 id="birthday"&gt;Happy Birthday!&lt;/h1&gt;</code></pre>
+
+<p>CSS:</p>
+
+<pre><code>#birthday {
+    color: purple;
+}</code></pre>
+
+<p>
+    The <code>#</code> means you're targeting an ID.
+</p>
+
+
+<h2 id="css-child">97. Style Links Inside Navigation</h2>
+<pre><code>nav a {
+    color: white;
+}</code></pre>
+
+<p>
+    This means "style every <code>a</code> that's inside a
+    <code>nav</code>."
+</p>
+
+
+<h2 id="css-button">98. Make a Button Look Better</h2>
+<pre><code>button {
+    background-color: blue;
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}</code></pre>
+
+<p>You can also give it a hover effect:</p>
+
+<pre><code>button:hover {
+    background-color: darkblue;
+}</code></pre>
+
+
+<h2 id="css-sticky">99. Make Navigation Stick to the Top</h2>
+<pre><code>nav {
+    position: sticky;
+    top: 0;
+}</code></pre>
+
+
+<h2 id="css-mobile">100. Change Styles on Phones</h2>
+<pre><code>@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+}</code></pre>
+
+<p>
+    Everything inside this section only happens when the screen
+    is 600 pixels wide or smaller.
+</p>
+
+
+<hr>
+
+<h1>That's Enough to Build a Lot</h1>
+
+<p>
+    You absolutely do not need to memorize these 100 things.
+</p>
+
+<p>
+    Decide what you want to make, find something similar above,
+    copy it, and start changing things.
+</p>
+
+<p>
+    If you break the website, congratulations. You're programming.
+</p>
+
+<p>
+    Go mess around on the <a href="test.html">Test Page</a>.
+</p>
+
+</main>
 
 </body>
-
 </html>
